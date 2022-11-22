@@ -73,8 +73,8 @@ canvas {
   height: 100%;
   width: 100%;
   z-index: 2;
-  animation: dissolve 20s ease-in;
-  animation-delay: 40s;
+  animation: dissolve 10s linear forwards;
+  animation-delay: 30s;
 }
 
 p {
@@ -133,7 +133,7 @@ a {
   }
   50% {
     opacity: 0.5;
-    blur: 50%;
+    blur: 60%;
   }
   100% {
     opacity: 0;
