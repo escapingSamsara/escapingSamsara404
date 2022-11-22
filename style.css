@@ -6,14 +6,17 @@
 }
 
 body {
+  height: 100vh;
   margin: 0;
   font: normal 75% Arial, Helvetica, sans-serif;
 }
 canvas {
+  height: 100vh;
   z-index: -1;
   display: block;
   background: linear-gradient(
     rgba(0, 0, 0, 0.972) 20%,
+    rgba(255, 255, 255, 0) 50%,
     rgba(255, 255, 255, 0) 100%
   );
 
@@ -70,7 +73,7 @@ canvas {
 #text {
   position: absolute;
   top: 20%;
-  height: 100%;
+  height: 80%;
   width: 100%;
   z-index: 2;
   animation: dissolve 10s linear forwards;
@@ -143,6 +146,6 @@ a {
 
 @media screen and (max-width: 880px) {
   p {
-    font-size: 14vw;
+    font-size: 12vw;
   }
 }
