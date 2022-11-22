@@ -95,6 +95,6 @@ function type(n, t) {
   }, t)
 }
 
-// type(0, 400)
-// type(1, 4000)
-// type(2, 12000)
+type(0, 400)
+type(1, 4000)
+type(2, 12000)
