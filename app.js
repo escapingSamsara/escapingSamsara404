@@ -91,10 +91,10 @@ function type(n, t) {
         clearInterval(se)
         document.getElementsByTagName('code')[n].innerHTML = str
       }
-    }, 10)
+    }, 60)
   }, t)
 }
 
-type(0, 0)
-type(1, 800)
-type(2, 1600)
+type(0, 400)
+type(1, 4000)
+type(2, 8000)

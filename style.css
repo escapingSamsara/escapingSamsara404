@@ -73,9 +73,7 @@ canvas {
 }
 
 p {
-  font-family: 'Bevan', cursive;
-  font-size: 1.5rem;
-  margin: 10vh 0 0;
+  font-size: 15px;
   text-align: center;
   letter-spacing: 5px;
   background-color: black;
@@ -85,36 +83,39 @@ p {
   -moz-background-clip: text;
   background-clip: text;
 }
-p span {
-  font-size: 1.5rem;
+code n {
+  color: #e07373;
+  font-size: 15px;
 }
-
 code {
-  color: #bdbdbd;
+  color: #fbd17c;
+  font-size: 15px;
+  font-style: unset;
   text-align: center;
   display: block;
-  font-size: 1.5rem;
   margin: 0 30px 25px;
 }
 code span {
-  color: #f0c674;
+  font-size: 15px;
+  color: #fbd17c;
 }
 code i {
-  color: #b5bd68;
+  font-size: 15px;
+  color: #85cc5f;
 }
 code em {
-  color: #b294bb;
+  font-size: 15px;
+  color: #2cbaae;
   font-style: unset;
 }
-code b {
-  color: #81a2be;
-  font-weight: 500;
+code m {
+  font-size: 15px;
+  color: #a113b7;
 }
 
 a {
   color: #8abeb7;
   font-family: monospace;
-  font-size: 1.5rem;
   text-decoration: underline;
   margin-top: 10px;
   display: inline-block;
