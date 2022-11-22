@@ -19,16 +19,37 @@ canvas {
     rgba(255, 255, 255, 0) 50%,
     rgba(255, 255, 255, 0) 100%
   );
-
-  /* vertical-align: bottom; */
-} /* ---- particles.js container ---- */
+}
+#voidboy {
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000000;
+  background-image: url('./img/mainbackground_finale_boyvoid40412.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 20s ease-in forwards;
+  animation-delay: 0s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 #particles-js {
+  z-index: 1;
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: #000000;
-  background-image: url('./img/mainbackground_finale_boyvoid404.png');
+  background-image: url('./img/mainbackground_finale_boyvoid404bgmountains.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
