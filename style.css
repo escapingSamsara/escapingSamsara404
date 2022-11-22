@@ -121,6 +121,10 @@ a {
   display: inline-block;
 }
 
+#text:hover {
+  blur: 30%;
+}
+
 @media screen and (max-width: 880px) {
   p {
     font-size: 14vw;
