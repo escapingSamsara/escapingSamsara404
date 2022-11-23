@@ -6,7 +6,10 @@
 }
 
 body {
+  width: 100vw;
   height: 100vh;
+  background-color: #121212;
+  z-index: 0;
   margin: 0;
   font: normal 75% Arial, Helvetica, sans-serif;
 }
@@ -14,15 +17,16 @@ canvas {
   height: 100vh;
   z-index: -1;
   display: block;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.972) 20%,
-    rgba(255, 255, 255, 0) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+}
+#wrapper {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
 }
 #voidboy {
+  overflow: hidden;
   opacity: 0;
-  z-index: 4;
+  z-index: 5;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -43,9 +47,111 @@ canvas {
     opacity: 1;
   }
 }
-#mountains {
-  opacity: 1;
+
+#planetHolder {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.972) 20%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  height: 100vh;
+  width: 100vw;
   z-index: 3;
+}
+.planet {
+  overflow: hidden;
+  background-color: #00000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#planet1 img {
+  z-index: 2;
+  position: absolute;
+  top: 14%;
+  left: 57%;
+  max-width: 12%;
+  max-height: 12%;
+  background-color: #00000000;
+  scale: 0.95;
+}
+#planet2 img {
+  z-index: 2;
+  position: absolute;
+  top: 41%;
+  left: 7%;
+  max-width: 5%;
+  max-height: 5%;
+  background-color: #00000000;
+
+  /* animation: fadeIn 10s ease-in forwards;
+  animation-delay: 0s; */
+  scale: 1;
+}
+#planet3 img {
+  z-index: 5;
+  position: absolute;
+  top: 23%;
+  left: 16.5%;
+  max-width: 25%;
+  max-height: 25%;
+  background-color: #00000000;
+
+  /* animation: fadeIn 10s ease-in forwards;
+  animation-delay: 0s; */
+  scale: 1;
+}
+#planet4 img {
+  z-index: 2;
+  position: absolute;
+  top: 15%;
+  left: 58%;
+  max-width: 65%;
+  max-height: 35%;
+  background-color: #00000000;
+  /* animation: fadeIn 10s ease-in forwards;
+  animation-delay: 0s; */
+  scale: 1;
+}
+
+#planet5 img {
+  z-index: 2;
+  position: absolute;
+  top: 55%;
+  left: 81.5%;
+  max-width: 5%;
+  max-height: 5%;
+  background-color: #00000000;
+  /* animation: fadeIn 10s ease-in forwards;
+  animation-delay: 0s; */
+  scale: 1;
+}
+#planet6 img {
+  z-index: 2;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  max-width: 5%;
+  max-height: 5%;
+  background-color: #00000000;
+  /* animation: fadeIn 10s ease-in forwards;
+  animation-delay: 0s; */
+  scale: 1;
+}
+#planet7 img {
+  z-index: 2;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  max-width: 10%;
+  max-height: 10%;
+  /* animation: fadeIn 10s ease-in forwards;
+  animation-delay: 0s; */
+  scale: 1;
+}
+#mountains {
+  opacity: 2;
+  z-index: 4;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -57,15 +163,15 @@ canvas {
 }
 
 #particles-js {
-  z-index: 2;
+  z-index: 1;
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #000000;
-  background-image: url('./img/mainbackground_finale_boyvoid404bgmountains.png');
+
+  /* background-image: url('./img/mainbackground_finale_boyvoid404bgmountains.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 }
 
 /* ---- stats.js ---- */

@@ -98,3 +98,19 @@ function type(n, t) {
 type(0, 400)
 type(1, 4000)
 type(2, 12000)
+
+// RELLAX
+
+// Accepts any class name
+var rellax = new Rellax('.rellax')
+
+//breakpoints
+// This is the default setting
+var rellax = new Rellax('.rellax', {
+  breakpoints: [576, 768, 1201],
+})
+
+// Center all the things!
+// var rellax = new Rellax('.rellax', {
+//   center: true,
+// })
