@@ -33,7 +33,7 @@ canvas {
   background-position: center;
   animation: fadeIn 10s ease-in forwards;
   animation-delay: 0s;
-  scale: 1;
+  scale: 0.95;
 }
 @keyframes fadeIn {
   0% {
