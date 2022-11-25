@@ -27,13 +27,13 @@ particlesJS('particles-js', {
     },
     move: {
       enable: true,
-      speed: 2,
+      speed: 1,
       direction: 'none',
       random: true,
       straight: false,
       out_mode: 'out',
       bounce: false,
-      attract: { enable: true, rotateX: 600, rotateY: 1200 },
+      attract: { enable: false, rotateX: 1200, rotateY: 1200 },
     },
   },
   interactivity: {
@@ -114,3 +114,5 @@ var rellax = new Rellax('.rellax', {
 // var rellax = new Rellax('.rellax', {
 //   center: true,
 // })
+
+// SCALE ON SCROLL
